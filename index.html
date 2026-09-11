@@ -115,6 +115,9 @@
 
   .case{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:30px;margin-bottom:22px;transition:border-color .3s,transform .3s,box-shadow .3s}
   .case:hover{border-color:rgba(90,162,255,.5);transform:translateY(-3px);box-shadow:0 20px 50px -30px rgba(0,0,0,.9)}
+  .case.proj{border-style:dashed;border-color:rgba(90,162,255,.35)}
+  .case.proj:hover{border-style:solid}
+  .case.proj .dates{color:var(--accent);font-weight:600}
   .case .role{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:6px}
   .case h3{margin:0;font-size:20px}.case .co{color:var(--accent);font-weight:600;margin-top:2px}
   .case .dates{color:var(--muted);font-size:14px}
@@ -224,7 +227,14 @@
     <div class="metrics"><div class="metric"><div class="n">+30%</div><div class="l">processing efficiency</div></div><div class="metric"><div class="n">95%</div><div class="l">accuracy SLA maintained</div></div><div class="metric"><div class="n">2.5 yrs</div><div class="l">production ownership</div></div></div>
   </div>
 
-  <p class="note reveal"><strong>Public project — Spotify Audio Analytics</strong> (dbt + DuckDB, ~30k tracks, staging &rarr; tested star schema): <a href="https://ic334.github.io/dbt-spotify-analytics/" target="_blank" rel="noopener noreferrer">live dashboard</a> &middot; <a href="https://ic334.github.io/dbt-spotify-analytics/dag/" target="_blank" rel="noopener noreferrer">dbt docs &amp; lineage</a> &middot; <a href="https://github.com/ic334/dbt-spotify-analytics" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+  <div class="case reveal proj">
+    <div class="role"><h3>Spotify Audio Analytics</h3><span class="dates">Personal project</span></div>
+    <div class="co">dbt + DuckDB &middot; ~30k tracks</div>
+    <div class="grid">
+      <div class="blk"><h4>What it shows</h4><p>A production-shaped transformation layer: staging &rarr; a tested, documented star schema, with data-quality tests and a browsable lineage graph. Runs end to end locally &mdash; no warehouse, no credentials.</p></div>
+      <div class="blk"><h4>Explore it</h4><p><a href="https://ic334.github.io/dbt-spotify-analytics/" target="_blank" rel="noopener noreferrer">Live dashboard</a> &middot; <a href="https://ic334.github.io/dbt-spotify-analytics/dag/" target="_blank" rel="noopener noreferrer">dbt docs &amp; lineage</a> &middot; <a href="https://github.com/ic334/dbt-spotify-analytics" target="_blank" rel="noopener noreferrer">GitHub repo</a></p></div>
+    </div>
+  </div>
 </div></section>
 
 <section id="skills"><div class="wrap">
